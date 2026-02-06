@@ -12,6 +12,7 @@ import { Pricing } from './components/Pricing';
 import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
 import { GroupStudyStudent } from './components/GroupStudyStudent';
+import { BookStore } from './components/BookStore';
 
 // Teacher Components
 import { TeacherHero } from './components/TeacherHero';
@@ -20,6 +21,7 @@ import { TeacherFeatures } from './components/TeacherFeatures';
 import { TeacherWallet } from './components/TeacherWallet';
 import { TeacherAppDownload } from './components/TeacherAppDownload';
 import { GroupStudyTeacher } from './components/GroupStudyTeacher';
+import { TeacherFAQ } from './components/TeacherFAQ';
 
 function App() {
   const [userType, setUserType] = useState<'student' | 'teacher'>('student');
@@ -53,8 +55,9 @@ function App() {
               <ExamShowcase />
               <GroupStudyStudent />
               <Pricing />
-              <Leaderboard />
               <StatsSection />
+              <BookStore />
+              <Leaderboard />
               <Testimonials />
               <FAQ />
               <AppDownload />
@@ -66,6 +69,7 @@ function App() {
               <TeacherFeatures />
               <GroupStudyTeacher />
               <TeacherWallet />
+              <TeacherFAQ />
               <TeacherAppDownload />
             </>
           )}
