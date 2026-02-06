@@ -11,12 +11,15 @@ import { HowItWorks } from './components/HowItWorks';
 import { Pricing } from './components/Pricing';
 import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
+import { GroupStudyStudent } from './components/GroupStudyStudent';
 
 // Teacher Components
 import { TeacherHero } from './components/TeacherHero';
 import { TeacherEditor } from './components/TeacherEditor';
 import { TeacherFeatures } from './components/TeacherFeatures';
 import { TeacherWallet } from './components/TeacherWallet';
+import { TeacherAppDownload } from './components/TeacherAppDownload';
+import { GroupStudyTeacher } from './components/GroupStudyTeacher';
 
 function App() {
   const [userType, setUserType] = useState<'student' | 'teacher'>('student');
@@ -48,22 +51,24 @@ function App() {
               <Features />
               <HowItWorks />
               <ExamShowcase />
+              <GroupStudyStudent />
               <Pricing />
               <Leaderboard />
               <StatsSection />
               <Testimonials />
               <FAQ />
+              <AppDownload />
             </>
           ) : (
             <>
               <TeacherHero />
               <TeacherEditor />
               <TeacherFeatures />
+              <GroupStudyTeacher />
               <TeacherWallet />
+              <TeacherAppDownload />
             </>
           )}
-          
-          <AppDownload />
         </main>
         <Footer />
       </div>
